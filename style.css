@@ -1,0 +1,1289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 400;
+}
+
+.nav {
+    width: 100%;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.3);
+    /* opacity: 0.6; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.intro {
+    padding-top: 33vh;
+    font-size: 4.2rem;
+    padding-left: 17vw;
+    font-weight: 400;
+    font-family:'Mulish', sans-serif;
+    color: white;
+}
+
+.intro2 {
+    font-size: 3rem;
+    padding-left: 14vw;
+    font-family: 'Italianno',vivaldi, cursive;
+    word-spacing: .3rem;
+    color: white;
+    font-weight: 400;
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(fooda.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 610px;
+}
+
+#about {
+    width: 100%;
+    height: auto;
+    background: #5f885f;
+    color: rgb(255, 255, 255);
+    padding: 19vh 10vw 7vh;
+}
+
+#menu {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(foodb.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 17vh 0 9vh;
+}
+
+#reviews {
+    width: 100%;
+    height: auto;
+    background: white;
+    padding: 17vh 10vw 7vh;
+}
+
+#contact {
+    width: 100%;
+    height: auto;
+    background: #5f885f;
+    padding: 17vh 10vw 7vh;
+}
+
+.account{
+    width: fit-content;
+    height: fit-content;
+    /* background: white; */
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    right: 250px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: white;
+    /* cursor: pointer;    */
+}
+
+
+.account p{
+    position:relative;
+    top:1.2rem;
+    left: -.6rem;
+    color: white;
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.account .logout{
+    position: fixed;
+    background: #e3eee3;
+    /* color:white; */
+    width: 330px;
+    height:70px;
+    top: 90px;
+    text-align: left;
+    padding-left: 3px; 
+    right: 0;  
+
+}
+
+.account .hide{
+    position: fixed;
+    right: 0;
+    top: 80px;
+}
+
+
+
+.logout a{
+    text-decoration: none;
+    color: #224122;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+
+
+
+/* #services {
+    width: 100%;
+    height: 100vh;
+    background: #3a5e3a;
+    color: rgb(255, 255, 255);
+    padding: 19vh 0;
+} */
+
+.green {
+    color: #649264;
+    font-family:'Mulish', sans-serif;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 5px;
+    left: 45%;
+    transform: translateX(-50%);
+
+}
+
+.nav ul li {
+    margin: 0 10px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: .98rem;
+    transition: .5s;
+    font-weight: 500;
+}
+
+.nav ul li a:hover {
+    color: rgb(250, 206, 12);
+
+}
+
+.navi {
+    width: 27px;
+    height: 20px;
+    /* background:red; */
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    z-index: 4;
+}
+
+.navi .bar {
+    background: white;
+    width: 90%;
+    height: 15%;
+    position: relative;
+    top: 33%;
+}
+
+.navi .bar::before {
+    content: "";
+    background: white;
+    width: 110%;
+    height: 100%;
+    position: absolute;
+    top: -8px;
+}
+
+.navi .bar::after {
+    content: "";
+    background: white;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 8px;
+}
+
+.order {
+    margin-left: 18vw;
+    margin-top: 10px;
+    border: none;
+    width: 10em;
+    height: 3em;
+    background: rgb(34, 65, 34);
+    border-radius: 1em;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.order a{
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+
+}
+
+.order:hover {
+    background: white;
+    color: #224122;
+
+}
+
+.order:hover a{
+    color: #224122;
+
+}
+
+.social {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    width: 180px;
+    height: 40px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: scale(.9);
+}
+
+.icon {
+    width: 38px;
+    height: 38px;
+    /* border: 1px solid white; */
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: rgb(250, 206, 12);
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 3vh;
+}
+
+.text {
+    text-align: justify;
+    padding: 10px 0;
+    font-size: .95rem;
+    font-weight:100;
+    max-width: 1100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* color: red; */
+
+}
+
+#menu .heading {
+    color: white;
+    text-shadow: 0px 0px 7px rgb(34, 65, 34);
+}
+
+.menubox {
+    width: 90vw;
+    height: auto;
+    /* background: yellow; */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+    justify-content: center;
+    max-width: 1240px;
+}
+
+.servicebox {
+    width: 90vw;
+    height: auto;
+    /* background:lightgray; */
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+    justify-content: center;
+    /* max-width: 1240px; */
+}
+
+.box {
+    width: 270px;
+    height: auto;
+    /* border: 1px solid white; */
+    margin: 15px;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: rgb(37, 73, 37);
+    box-shadow: 2px 2px 7px rgb(22, 22, 22);
+}
+
+.box img{
+    width:100px ;
+    height: 100px;
+    position: relative;
+    left: 45%;
+    transform: translateX(-50%);
+    margin: 10px;
+    margin-left: 0;
+}
+
+.cartnum{
+    position: absolute;
+    background: transparent;
+    top: 55px;
+    right: 195px;
+    font-size: .95rem;
+    /* padding: .2rem .6rem; */
+    border-radius: 15px;
+    background: #649264;
+    color: white;
+    text-decoration: none;
+    padding: .15rem .5rem;
+}
+
+
+.food {
+    width: 240px;
+    height: 320px;
+    background: white;
+    margin: 20px;
+    /* border: 2px solid white; */
+    position: relative;
+    border-radius: .3rem;
+    /* box-shadow: 0px 0px 2px lightgray; */
+}
+
+.main{
+    color: rgb(250, 206, 12);
+    text-align: center;
+}
+
+.describe{
+    font-size: .9rem;
+}
+
+.pic {
+    position: absolute;
+    top: 18%;
+    left: 1%;
+    width: 98%;
+    height: 62%;
+    background: gray;
+}
+
+.pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    position: absolute;
+    top: 1.5%;
+    left: 50%;
+    font-size: 1.1rem;
+    transform: translateX(-50%);
+    font-weight: 500;
+    color: #224122;
+}
+
+.price {
+    position: absolute;
+    top: 1.9rem;
+    left: 5%;
+    font-size: .95rem;
+}
+
+.order2 {
+    position: absolute;
+    bottom: 2px;
+    width: 98%;
+    left: 1%;
+    background: rgba(34, 65, 34, .9);
+    border: none;
+    outline: none;
+    height: 18%;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.order2:hover {
+    color: rgb(250, 206, 12);
+}
+
+.contain {
+    background: #5f8a5f;
+    padding: 8px 20px;
+    position: relative;
+    color: white;
+    max-width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px gray;
+}
+
+.rating {
+    width: 120px;
+    height: 20px;
+    /* border: 1px solid white; */
+    margin: 5px;
+}
+
+.comment {
+    font-size: .8rem;
+    font-weight: 400;
+}
+
+.commentor {
+    font-size: .9rem;
+    margin-top: 3px;
+    color: rgb(250, 206, 12);
+    font-weight: 500;
+}
+
+.map {
+    background: lightgray;
+    width: 85vw;
+    height: 85vw;
+    margin-top: 5vh;
+    position: relative;
+    max-width: 370px;
+    max-height: 370px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form {
+    background: #fff;
+    width: 90vw;
+    height: auto;
+    max-width: 450px;
+    position: relative;
+    box-shadow: 0px 0px 8px rgb(37, 37, 37);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.form2 {
+    background: #fff;
+    width: 90vw;
+    height: auto;
+    max-width: 450px;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px rgb(37, 37, 37);
+}
+
+
+
+.form .label,.signupform .label {
+    position: relative;
+    width: 100%;
+    padding: 25px 0 10px;
+    background: rgb(250, 206, 12);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.form2 .label,.signinform .label {
+    position: relative;
+    width: 100%;
+    padding: 25px 0 10px;
+    background: rgb(34, 65, 34);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.form2 input,.signinform input {
+    width: 90%;
+    height: 1.9rem;
+    margin: 0 5%;
+    border: 0;
+    border-bottom: 1px solid #5f8a5f;
+    border-radius: 0px;
+    margin-top: 0;
+    outline: none;
+    padding: 3px 10px;
+    font-size: .8rem;
+}
+
+
+
+.form input,.signupform input {
+    width: 90%;
+    height: 1.9rem;
+    margin: 0 5%;
+    border: 0;
+    border-radius: 0px;
+    border-bottom: 1px solid #5f8a5f;
+    margin-top: 0;
+    outline: none;
+    padding: 3px 10px;
+    font-size: .8rem;
+}
+
+input[type=radio]{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-left: 5%;
+}
+
+.form textarea {
+    width: 90%;
+    height: 50px;
+    margin: 0 5%;
+    border: 0;
+    border-bottom: 1px solid #5f8a5f;
+    resize: none;
+    border-radius: 0px;
+    margin-top: 0;
+    outline: none;
+    padding: 3px 10px;
+    font-size: 1rem;
+}
+
+.form2 textarea{
+    width: 90%;
+    height: 50px;
+    margin: 0 5%;
+    border: 0;
+    border-bottom: 1px solid #5f8a5f;
+    resize: none;
+    border-radius: 0px;
+    margin-top: 0;
+    outline: none;
+    padding: 3px 10px;
+    font-size: 1rem;
+}
+
+.form2 label,.signinform label{
+    margin: 0 5%;
+    color: #3a5e3a;
+    font-weight: 500;
+    font-size: .9rem;
+    display: block;
+
+}
+
+.form label,.signupform label{
+    margin: 0 5%;
+    color: #3a5e3a;
+    font-weight: 500;
+    font-size: .9rem;
+    display: block;
+
+}
+
+.form small,.signupform small {
+    margin: 0 5%;
+    color: red;
+    font-weight: 500;
+    font-size: .7rem;
+    display: block;
+    margin-bottom: 0rem;
+    visibility: hidden;
+
+}
+
+.form2 small,.signinform small{
+    margin: 0 5%;
+    color: red;
+    font-weight: 500;
+    font-size: .7rem;
+    display: block;
+    margin-bottom: 0rem;
+    visibility: hidden;
+
+}
+
+.form button,.signupform button{
+    width: 90%;
+    height: 3rem;
+    margin: .5rem 5%;
+    border: none;
+    outline: none;
+    background: #3a5e3a;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form2 button,.signinform button {
+    width: 90%;
+    height: 3rem;
+    margin: .5rem 5%;
+    border: none;
+    outline: none;
+    background: rgb(250, 206, 12);
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.switch{
+    margin: .5rem 5%;
+    font-size: 1rem;
+
+}
+
+.close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 1rem;
+    top: 1.3rem;
+    /* background: red; */
+    z-index: 7;
+    cursor: pointer;
+}
+
+.close .fa{
+    font-size:1.3em;
+    font-weight:500;
+    transition:.5s;
+    color: white;
+}
+
+.errormessage{
+    color: red;
+    text-align: center;
+    font-size: .9rem;
+    display: block;
+    opacity: 1;
+}
+
+.switch span{
+color:rgb(250, 206, 12);
+cursor: pointer;
+}
+.switch span:hover{
+    color: #224122;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: linear-gradient(rgba(15, 29, 15, 0.95), rgba(15, 29, 15, 0.95)), url(food.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    bottom: 0;
+    padding: 5rem 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:flex-start;
+}
+
+.contactbox {
+    /* background-color: white; */
+    width: fit-content;
+    min-height: 30vh;
+    margin: 20px;
+}
+
+
+.copy {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: .7rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+#rating {
+    display: inline-block;
+    width: 1em;
+    margin: 3px 5%;
+    margin-right: 0;
+}
+
+.signupform{
+    position: absolute;
+    width: 90vw;
+    height: auto;
+    background: white;
+    max-width: 400px;
+    left: 50%;
+    transform: translateX(-50%) scale(.9);
+    top: 25vh;
+    z-index: 3;
+    opacity: 0;
+    display: none;
+    transition: all .4s;
+}
+
+
+.signinform{
+    position: absolute;
+    width: 90vw;
+    height: auto;
+    background: white;
+    max-width: 400px;
+    max-height: 500px;
+    left: 50%;
+    transform: translateX(-50%) scale(.9);
+    top:25vh;
+    z-index: 3;
+    opacity: 0;
+    display: none;
+    transition: all .4s;
+
+}
+
+.cover{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    display: none;
+}
+
+.desc{
+    color: white;
+    font-size: .9rem;
+    width: 27vw;
+    position: absolute;
+    left: 2vw;
+    top: 40%;
+}
+
+.info{
+    /* background-color: red; */
+    font-size: .9rem;
+    width: fit-content;
+    height:fit-content;
+    position: absolute;
+    right: 7vw;
+    top: 33%;
+    padding: 1rem;
+}
+
+.work1{
+    color: rgb(250, 206, 12);
+    font-size: 1.1rem;
+    text-decoration: 2px underline rgb(250, 206, 12);
+    text-underline-offset: .3rem;
+    padding: 1rem;
+    text-align: center;
+    
+}
+.work{
+    color: white;
+    font-size: 1rem;
+}
+
+.work2{
+    color: rgb(250, 206, 12);
+    font-size: 1rem;
+}
+
+.off{
+    display: none;
+    opacity: 0;
+}
+
+.orders{
+    width: 100%;
+    height: fit-content;
+    min-height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(hotdogs.jpg);
+    background-size: cover;
+    position: relative;
+    padding: 25vh 1% 15vh;
+    /* background-attachment: fixed; */
+}
+
+.list{
+    position: relative;
+    background: white;
+    width: 95%;
+    height: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 450px;
+    padding: .4rem;
+    border-radius: .4rem;
+}
+
+.top{
+    text-align: center;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #224122;
+    font-weight: 500;
+    margin: 2.5rem 0 1.3rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.orderitem{
+    width: 100%;
+    height: 100px;
+    /* background: yellow; */
+    position: relative;
+
+
+}
+
+.orderitem:last-child{
+    height:130px;
+}
+.orderitem:last-child button{
+    width: 100%;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+    background: #224122;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 0;
+    right: auto;
+    left: 0%;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.orderitem .picture{
+    height: 100%;
+    width: 120px;
+    position: absolute;
+    left: 0;top: 0;
+    background: lightgray;
+}
+
+.orderitem .picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.orderitem .content{
+    height: 100%;
+    width: calc(100% - 125px);
+    position: absolute;
+    right: 0;top: 0;
+    /* background: yellow; */
+    padding: .4rem;
+    font-weight: 500;
+}
+
+
+.orderitem button{
+    width: auto;
+    height:auto ;
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 30%;
+    margin: .4rem;
+    margin-bottom: 0;
+    color: #224122;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.orders hr{
+    background: lightgray;
+    margin: .2rem .15rem;
+     
+}
+
+.noorder{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 10vh;
+}
+
+.oname{
+    font-size: 1rem;
+    color: #224122;
+    margin-left: .2rem;
+
+}
+.odescribe{
+    font-size: .9rem;
+    font-weight: 300;
+    margin: .2rem .18rem;
+}
+
+.oprice{
+    margin:.18rem;
+    color: grey;
+    font-size: 1rem;
+}
+
+.myorders{
+    width: 100%;
+    min-height: 60vh;
+    position: relative;
+    background:#5f885f;
+    padding-top: 25vh;
+    padding-bottom: 15vh;
+}
+
+.myorders table{
+    width: 80vw;
+    border: 1px solid rgb(250, 206, 12);
+    border-collapse: collapse;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 70rem;
+
+}
+.myorders h3{
+    text-align: center;
+    color: white;
+    font-size: 1.4rem;
+    padding-bottom: .5rem;
+
+}
+
+.myorders table tr td{
+    border: 1px solid rgb(250, 206, 12);
+    padding: .5rem;
+    color: rgb(255, 255, 255);
+
+}
+
+.myorders table tr:first-of-type td{
+    text-align: center;
+
+}
+
+.hide{
+    display: none;
+}
+
+.form2 input{
+    display: none;
+}
+
+.form2 label:nth-of-type(2){
+    display: inline-block;
+}
+
+.form2 label.fa-star{
+    display: inline-block;
+    padding: .3rem;
+    margin: 0;
+    font-size: 1.3rem;
+    color: #224122;
+    font-weight: 800;
+}
+
+.form2 input:checked+label~label{
+    font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+/* .fa-star{
+    color:  rgb(250, 206, 12);
+} */
+
+
+@media screen and (max-width:1080px) {
+
+    .account .logout{
+        position: absolute;
+        color: #224122;
+        width: 150px;
+        height:70px;
+        top: 60px;
+        text-align: left;
+        padding-left: 3px; 
+        left: -1rem; 
+        background: none;
+        color: white;
+        display: block;   
+    }
+
+
+    .logout a{
+        color: white;
+    }
+
+    .desc{
+       
+        width:80vw;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 5vh 0;
+    }
+
+    .info{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 5vh 0 0;
+
+    }
+
+    .navi {
+        display: block;
+        transform: scale(0.9);
+        top: 20px;
+    }
+
+    .intro {
+        font-size: 3.2em;
+        padding-left: 17vw;
+
+    }
+
+    .intro2 {
+        font-size: 2.35em;
+        word-spacing: .25rem;
+    }
+
+    .nav ul {
+        top: 80px;
+        display: flex;
+        flex-direction: column;
+        left: 50%;
+        /* background: red; */
+    }
+
+    .cartnum{
+        right: 250px;
+        top: 22px;
+    }
+
+    .nav ul li {
+        text-align: center;
+        margin-top: .85rem;
+    }
+
+    .nav {
+        height: 60px;
+        overflow: hidden;
+        transition: all .3s;
+    }
+
+    .active {
+        background: #224122;
+        height: 300px;
+    }
+
+
+    .social {
+        top: 15px;
+        right: 70px;
+    }
+
+    .account{
+        top: .8rem;
+        right: auto;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        left: 40px;
+    }
+
+    #about {
+        padding: 15vh 9vw 7vh;
+    }
+
+    .myorders{
+        padding-top: 18vh;
+        
+    }
+
+    .orders{
+        padding-top:23vh
+    }
+
+    .hide{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+
+    .list{
+        width: 99%;
+    }
+
+    .orderitem{
+        height: 90px;
+    }
+
+    .orderitem .picture{
+        width: 90px;
+    }
+
+    .orderitem .content{
+        width: calc(100% - 92px);
+        padding: 0;
+    }
+
+    .orderitem button{
+       font-size: .95rem;
+       right: 2rem;
+    }
+
+    .oname{
+        font-size: .85rem;
+        margin: .12rem .1rem;
+    }
+
+    .odescribe{
+        font-size: .75rem;
+        margin: .13rem;
+    }
+
+    .oprice{
+        font-size: .85rem;
+        margin: .13rem;
+    }
+
+    .top{
+        font-size: 1.4rem;
+        margin: 1.6rem 0 1rem;
+    }
+
+    .intro {
+        font-size: 2.5em;
+        padding-left: 17vw;
+
+    }
+
+    .intro2 {
+        font-size: 1.9em;
+        word-spacing: .2rem;
+    }
+
+    .cartnum{
+        right: 80px;
+    }
+
+    /* .nav {
+        height: 60px;
+    } */
+
+    #about {
+        padding: 12vh 5vw 5vh;
+    }
+
+    .heading {
+        font-size: 1.2rem;
+    }
+
+    .text {
+        font-size: .85rem;
+        text-transform: capitalize;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .contain {
+        width: 95vw;
+    }
+
+    .map {
+        width: 95vw;
+    }
+
+    .account{
+        left: 40px;
+        right: auto;
+    }
+
+    .myorders table{
+        width: 98vw;
+    }
+
+    .myorders table tr td{
+        font-size: .88rem;
+        padding: .3rem;    
+    }
+
+    .myorders{
+        padding-top: 15vh;
+
+    }
+
+    .noorder{
+        padding-top: 8vh;
+        font-size: .85rem;
+    }
+}
+
+@media screen and (max-width:350px){
+    .menubox{
+        width: 100%;
+    }
+
+    .food{
+        margin: 20px 0;
+    }
+}
